@@ -29,7 +29,8 @@ public class VollyBallMenu {
             } else if (input.equals("2")) {
                 vollyBallMenuMethod.deletTeam();
             } else if (input.equals("3")) {
-
+                VollyBallMatch vollyBallMatch = new VollyBallMatch();
+                vollyBallMatch.vollyBallMatch();
             } else if (input.equals("4")) {
                 vollyBallMenuMethod.showTeamInformation();
             } else if (input.equals("5")) {

@@ -88,7 +88,7 @@ public class VollyBallTeamRepository {
     }//return table
 
     public void updatewinner(VollyballTeam vollyballTeam) throws SQLException {
-        String sql = " UPDATE soccerteam SET wins = ?, points = ?, numberofgames = ? , goaldifference = ?   WHERE vollyballteamname = ?";
+        String sql = " UPDATE vollyballteam SET wins = ?, points = ?, numberofgames = ? , poandifference = ?   WHERE vollyballteamname = ?";
         PreparedStatement ps = ApplicationConnection.getConnection()
                 .prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         ps.setInt(1, vollyballTeam.getWins());
@@ -103,7 +103,7 @@ public class VollyBallTeamRepository {
 
 
     public void updatelosser(VollyballTeam vollyballteam) throws SQLException {
-        String sql = " UPDATE soccerteam SET numberofgames = ? , goaldifference = ?  , losses = ?  WHERE vollyballteamname = ?";
+        String sql = " UPDATE vollyballteam SET numberofgames = ? , poandifference = ?  , losses = ?  WHERE vollyballteamname = ?";
         PreparedStatement ps = ApplicationConnection.getConnection()
                 .prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         ps.setInt(1, vollyballteam.getNumberOfGames());
