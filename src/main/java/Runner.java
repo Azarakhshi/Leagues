@@ -1,4 +1,4 @@
-import service.Firstmenu;
+import menu.Firstmenu;
 
 import java.sql.SQLException;
 

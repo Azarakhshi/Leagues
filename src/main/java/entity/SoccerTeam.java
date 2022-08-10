@@ -9,8 +9,8 @@ public class SoccerTeam extends Team{
 
     }
 
-    public SoccerTeam(String clubName, int goalDifference) {
-        super(clubName);
+    public SoccerTeam(String name, int goalDifference) {
+        super(name);
         GoalDifference = goalDifference;
     }
 
@@ -38,12 +38,13 @@ public class SoccerTeam extends Team{
 
     @Override
     public String toString() {
-        return "SoccerTeam{" +
-                "GoalDifference='" + GoalDifference + '\'' +
-                ", numberOfGames=" + numberOfGames +
-                ", Wins=" + Wins +
-                ", Losses=" + Losses +
-                ", points=" + points +
-                '}';
+        return "SoccerTeam { " +
+                " name    =   " + name +
+                ", numberOfGames = " + numberOfGames +
+                ", Wins = " + Wins +
+                ", Losses = " + Losses +
+                ", points = " + points +
+                ", GoalDifference = " + GoalDifference +
+                " } ";
     }
 }

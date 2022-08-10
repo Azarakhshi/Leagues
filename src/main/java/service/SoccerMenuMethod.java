@@ -63,7 +63,7 @@ public class SoccerMenuMethod {
     }
 
     public void ShowGeneralTable() throws SQLException {
-        SoccerTeam[] soccerTeams = new SoccerTeam[1000];
+        SoccerTeam[] soccerTeams;
         soccerTeams = soccerTeamRepository.showTable();
         while (true) {
             if (soccerTeams.length == 0) {
@@ -72,13 +72,11 @@ public class SoccerMenuMethod {
             } else {
                 for (int i = 0; i < soccerTeams.length; i++) {
 
-
                     if (soccerTeams[i] != null) {
-                        System.out.println(soccerTeams[i]);
 
+                        System.out.println((i+1) +  " _ " + soccerTeams[i]);
 
                     }
-
 
                 }
 
