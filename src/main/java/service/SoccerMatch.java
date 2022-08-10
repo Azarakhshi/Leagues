@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 import java.lang.*;
 
-public class soccerMatch {
+public class SoccerMatch {
 
 
     public void SoccerMatch() throws SQLException {

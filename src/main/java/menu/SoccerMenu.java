@@ -1,7 +1,7 @@
 package menu;
 
 import service.SoccerMenuMethod;
-import service.soccerMatch;
+import service.SoccerMatch;
 
 import java.sql.SQLException;
 import java.util.Scanner;
@@ -25,7 +25,7 @@ public class SoccerMenu {
             } else if (input.equals("2")) {
                 soccerMenuMethod.deletTeam();
             } else if (input.equals("3")) {
-                soccerMatch soccerMatch = new soccerMatch();
+                SoccerMatch soccerMatch = new SoccerMatch();
                 soccerMatch.SoccerMatch();
             } else if (input.equals("4")) {
                 soccerMenuMethod.showTeamInformation();
