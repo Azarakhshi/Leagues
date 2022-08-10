@@ -3,18 +3,22 @@ package entity;
 import java.util.Objects;
 
 public class SoccerTeam extends Team{
-    private String GoalDifference;
+    private int GoalDifference;
 
-    public SoccerTeam(String clubName, String goalDifference) {
+    public SoccerTeam(){
+
+    }
+
+    public SoccerTeam(String clubName, int goalDifference) {
         super(clubName);
         GoalDifference = goalDifference;
     }
 
-    public String getGoalDifference() {
+    public int getGoalDifference() {
         return GoalDifference;
     }
 
-    public void setGoalDifference(String goalDifference) {
+    public void setGoalDifference(int goalDifference) {
         GoalDifference = goalDifference;
     }
 

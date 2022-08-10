@@ -1,9 +1,10 @@
 package service;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Firstmenu {
-    public void shoeMenu(){
+    public void shoeMenu() throws SQLException {
         Scanner scanner = new Scanner(System.in);
 String input;
         while (true){
@@ -14,7 +15,8 @@ String input;
         System.out.println("exit");
         input = scanner.next();
         if(input.equals("1")){
-            //soccer
+            SoccerMenu soccerMenu = new SoccerMenu();
+            soccerMenu.showMenuSoccer();
         }else if(input.equals("2")){
             //vollyball
         }else if(input.equals("3")){
